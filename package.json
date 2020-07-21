@@ -23,10 +23,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "type-check": "tsc --pretty --noEmit",
-    "format": "prettier --write **/*.{js,ts,tsx,jsx}",
-    "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

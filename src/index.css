@@ -1,3 +1,6 @@
+@import './assets/css/bootstrap-reboot.css';
+@import './assets/css/bootstrap-grid.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +9,63 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body,
+footer {
+  height: 100%;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html:not(.android-device) {
+  * {
+    text-rendering: geometricPrecision;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+header,
+main,
+footer {
+  overflow-x: hidden;
+}
+
+main,
+section {
+  position: relative;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  margin: 0;
+}
+
+[role='button'] {
+  outline: none;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none;
+  outline-offset: 0px;
 }
